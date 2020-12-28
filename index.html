@@ -1,285 +1,769 @@
-<!DOCTYPE html>
-<!-- saved from url=(0074)file:///home/w4rlock/codes/linkedin-cv/Emanuel%20Rosal%20_%20LinkedIn.html -->
-<html lang="es" class="os-linux"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" type="text/css" href="./Emanuel Rosal _ LinkedIn_files/css(3)">
-<link rel="stylesheet" type="text/css" href="./Emanuel Rosal _ LinkedIn_files/css.css">
-<link rel="stylesheet" type="text/css" href="./Emanuel Rosal _ LinkedIn_files/css(4)">
-
-
-
-
-
-
+<html lang="es" class="os-linux">
+<!--<![endif]-->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="./Emanuel Rosal _ LinkedIn_files/css(3)">
+  <link rel="stylesheet" type="text/css" href="./Emanuel Rosal _ LinkedIn_files/css.css">
+  <link rel="stylesheet" type="text/css" href="./Emanuel Rosal _ LinkedIn_files/css(4)">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
-<body dir="ltr" class="member v2 preview-profile chrome-v5 chrome-v5-responsive sticky-bg js  freemium-bg js" id="pagekey-nprofile_preview_cxn1_skeleton" style="
+<style>
+  body {
+    font-family: 'Roboto';
+    font-size: 22px;
+    background: rgba(255, 255, 255, .95)
+    /* background: url('img/background.png') */
+  }
+
+  @font-face {
+    font-family: "Canva";
+    src: url("./dist/BebasNeueRegular.woff");
+  }
+
+  .margin-top-20 {
+    margin-top: 20px;
+  }
+
+  .margin-top-30 {
+    margin-top: 30px;
+  }
+
+  .profile-img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 9px solid #d4d4d4;
+  }
+
+  .card {
+    position: relative;
+    border: 1px solid #c8c8c8 !important;
+    margin: 14px;
+    padding-bottom: 10px;
+    background: white;
+    padding: 35px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+
+  .card-title {
+    position: absolute;
+    background: #272727;
+    color: white;
+    top: 0;
+    left: 0;
+    padding: 8px 20px 3px 20px;
+    font-family: 'Canva';
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+
+  .background-section {
+    margin-top: 60px;
+  }
+
+  .profile-name-container {
+    padding-top: 29px;
+    margin-left: 32px;
+    font-family: 'Canva';
+  }
+
+  .profile-name {
+    font-weight: 400;
+    line-height: 0.70;
+    letter-spacing: 0.05em;
+    font-size: 66.4125px;
+    text-transform: uppercase;
+  }
+
+  .profile-surname {
+    font-weight: 400;
+    line-height: 0.70;
+    letter-spacing: 0.05em;
+    font-size: 66.4125px;
+    text-transform: uppercase;
+    /* color: rgb(228, 50, 19); */
+    color: rgb(194, 51, 26);
+  }
+
+  .profile-rol {
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 0.3;
+    letter-spacing: 2;
+  }
+
+  .fa {
+    font-size: 32px;
+  }
+  .courses-listing li {
+    margin-bottom: 5px;
+  }
+  .award-item-title, .education-item-title, .courses-listing {
+    font-family: 'Canva';
+    font-size: 20px !important;
+    color: #434649 !important;
+    font-weight: bold !important;
+    
+  }
+  .award-item-place, .education-item-place {
+    font-family: 'Canva';
+    font-size: 21px !important;
+    color: rgb(194, 51, 26) !important;
+    font-family: 'CANVA' !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.7px !important;
+    font-size: 15px !important;
+    line-height: 16px !important;
+    letter-spacing: 1px;
+  }
+
+  .education-item-time {
+    font-family: 'CANVA';
+    font-size: 13px;
+    color: grey;
+    font-weight: 900;
+    line-height: 9px !important;
+  }
+  #background-honors .description {
+    font-family: monospace;
+    font-size: 16px;
+  }
+  .background-experience {
+    border-left: 5px solid grey;
+    border-left-style: dotted;
+    padding-left: 30px;
+    margin-left: 90px;
+  }
+  #background {
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+  }
+  #background-experience {
+    border-bottom: unset;
+  }
+  .experiencie-section:last-child .timeline-circle-year-container{
+    top: 58%;
+  }
+  .background-section .courses-listing {
+    padding-top: 0px;
+    padding-left: 16px;
+  }
+  .background-section .courses-listing li:before {
+    content: "";
+    padding-right: 0px;
+  }
+  .timeline-circle-year-container {
+    position: absolute;
+    left: -113px;
+    display: flex;
+    top: 40%;
+  }
+
+  .timeline-year {
+    font-family: 'CANVA';
+    font-size: 36px;
+    color: #b1b1b1;
+    padding-top: 12px;
+    margin-right: 10px;
+  }
+
+  .timeline-circle-out {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background: white;
+    border: 2px solid #dadada;
+    position: relative;
+  }
+  .timeline-circle-in {
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    background: #696969;
+    text-align: center;
+    top: 3px;
+    position: absolute;
+    left: 3px;
+  }
+  .background-section h3 {
+    padding-bottom: 20px;
+  }
+
+  .background-experience h3:before {
+    font-size: 44px;
+    font-family: "Font Awesome 5 Pro"; font-weight: 900; content: "\f46d";
+  }
+  .background-education h3:before {
+    font-size: 44px;
+    font-family: "Font Awesome 5 Pro"; font-weight: 900; content: "\f501";
+  }
+  .background-courses h3:before {
+    font-size: 44px;
+    font-family: "Font Awesome 5 Pro"; font-weight: 900; content: "\f5f3";
+  }
+  .background-honors h3:before {
+    font-size: 44px;
+    font-family: "Font Awesome 5 Pro"; font-weight: 900; content: "\f5a2";
+  }
+  .background-skills h3:before {
+    font-size: 44px;
+    font-family: "Font Awesome 5 Pro"; font-weight: 900; content: "\f7d9";
+  }
+
+ .experiencie-section {
+   position: relative;
+ }
+
+ .experiencie-section:last-child:after {
+  border-bottom: unset;
+ }
+
+ .experiencie-section::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid var(--warm-gray-30,#e6e9ec);
+    margin-top: 16px;
+ }
+
+ .company-logo {
+   width: 56px;
+   height: 56px;
+ }
+ .experiencie-section img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+ }
+
+ .awards-items, .education-item {
+   display: list-item;
+ }
+ .awards-container, .education-container, .profile-skill-section {
+   margin-left: 15px;
+ }
+ .profile-skill-section {
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 30px;
+ }
+ .profile-skill-section:last-child {
+   border-bottom: unset;
+ }
+ .profile-skill-section li {
+    background: #ffffff;
+    width: auto;
+    padding: 8px 15px;
+    display: inline-block;
+    border-radius: 4px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    margin: 4px 2px;
+    border: 1px solid #6f6f6f;
+    font-size: 16px;
+    /* font-weight: bold; */
+ }
+ .profile-img-container {
+   margin-left: 10px;
+ }
+
+ .role-title, .icon-section-title {
+    font-family: 'CANVA';
+    font-size: 28px !important;
+    letter-spacing: 0.3px;
+    color: #434649 !important;
+ }
+ .role-place {
+    /* color: #8a8a8a !important; */
+    color: rgb(194, 51, 26) !important;
+    font-family: 'CANVA' !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.7px !important;
+    font-size: 17px !important;
+    line-height: 24px !important;
+  }
+
+ #profile-skills h5 {
+   display: list-item;
+ }
+ .profile-skill-section h5 {
+    font-family: 'Canva';
+    font-size: 20px;
+ }
+ .skills-section {
+   padding-left: 0px;
+ }
+
+ .personal-data-info {
+    /* display: flex;
+    flex-wrap: wrap;
+    align-content: space-between; */
+    margin: 20px 0px;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+ }
+
+.personal-data-key {
+  text-align: right;
+  color: #8a8a8a !important;
+  font-family: 'CANVA' !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.7px !important;
+  font-size: 17px !important;
+  line-height: 24px !important;
+}
+
+.personal-data-value {
+  color: rgb(51, 51, 51);
+  font-family: 'CANVA' !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.7px !important;
+  font-size: 17px !important;
+  line-height: 24px !important;
+}
+
+.personal-data-info .row {
+  width: 100%;
+}
+
+ul {
+  font-size: 16px;
+  font-family: monospace;
+}
+
+.break-page-1 {
+  margin-top: 200px
+}
+</style>
+
+<body dir="ltr" class="member v2 preview-profile chrome-v5 chrome-v5-responsive sticky-bg js  freemium-bg js"
+  id="pagekey-nprofile_preview_cxn1_skeleton" style="
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-    background: url('img/background.png')
 ">
 
-
-
-
-
-
-
-
-
-
-
-
-<div id="body" class="has-text-ad" role="main" style="    background: rgba(255, 255, 255, 0.72);display:flex">
-<div class="wrapper hp-nus-wrapper" style="
+  <div id="body" class="has-text-ad" role="main" style="    background: rgba(255, 255, 255, 0.72);display:flex">
+    <div class="wrapper hp-nus-wrapper" style="
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 ">
 
-<div id="wrapper" class="" style="
+      <div id="wrapper" class="" style="
     background: none;margin: 10px;
     overflow-y: hidden;
     text-align: ce;
 ">
-<noscript>
-&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;lt;div class="alert attention"&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;gt;
-&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;lt;p&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;gt;Para utilizar el nuevo perfil de LinkedIn, debes usar un navegador que acepte JavaScript.&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;lt;/p&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;gt;
-&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;gt;
-</noscript>
-<div id="profile">
 
-<script type="text/javascript">LI.i18n.register('IntrosDialogStub-default-title','Solicitud de presentación');if(!LI.IntrosDialogDependencies){LI.IntrosDialogDependencies={jsFiles:'https:\/\/static.licdn.com\/scds\/concat\/common\/js?h=5yzpl4gi34d2ztlwxybir7g09-1klhext8ustb2dllq0s38vcwv&amp;fc=2',cssFiles:'https:\/\/static.licdn.com\/scds\/concat\/common\/css?h=9uas09rvrig812gppe8pezdm5-2wjjionwkrvna3b1prar6d0qr-2parkkfu6rvpuoklqbawocoyo&amp;fc=2'};}</script><!--Enjoy our markup--><div id="top-card" data-li-template="top_card"></div>
-
-
-
-
-
-  
-<div id="background" style="margin-top:30px;border: 1px solid #E9E9E9;box-shadow:none;" class="profile-background"><h2>Datos Personales</h2><div class="background-content " style="
-    margin-bottom: 40px;
-"><div id="background-certifications-container" class="background-section" data-li-template="certification_section">
-  
-  <div style="margin-top: 9px;"></div><div style="margin-top:10px"></div><div></div><table id="personal-info-view" class="additional-info-listing" summary="Datos personales"><tbody><tr><th scope="row">Nombre</th><td>Emanuel Rosal</td></tr>
-<tr><th scope="row">Fecha de nacimiento</th><td>02/06/1990</td></tr>
-<tr><th scope="row">Estado civil</th><td>Soltero</td></tr>
-<tr style=""><th scope="row">Dirección</th><td>Villa Mercedes, San Luis</td></tr>
-<tr><th scope="row">     </th><td></td></tr>
-
-
-
-<tr style="
-    margin-top: 10px;
-"><th scope="row">  </th><td>    </td></tr><tr style=""><th scope="row" style="color: #e1e1e1">--------------------</th><td></td></tr>
-
-<tr style="
-    margin-top: 10px;
-"><th scope="row">Email</th><td>warlock.gpl@gmail.com</td></tr><tr><th scope="row">Repo.</th><td>github.com/w4rlock</td></tr>
-<tr><th scope="row">Cel.</th><td>266 4844609</td></tr>
-
-
-</tbody></table>
-  </div></div></div>
-
-<div id="background" class="profile-background" style="box-shadow:none;    border: 1px solid #E9E9E9; padding-bottom:10px"><h2>Trayectoria profesional y académica</h2><div class="background-content "><div id="background-experience-container" class="background-section" data-li-template="experience_section"><div id="background-experience" class="background-experience edit-default"><h3>Experiencia</h3><div id="experience-693302944" class="editable-item section-item current-position"><div id="experience-693302944-view"><header><h5 class="experience-logo" aria-hidden="true"><a href="https://www.linkedin.com/company/3768727?trk=prof-exp-company-name"><span data-tracking="mcp_profile_sum" class="new-miniprofile-container /biz/miniprofile/3768727?pathWildcard=3768727" data-li-url="/biz/miniprofile/3768727?pathWildcard=3768727" data-li-getjs="https://static.licdn.com/scds/concat/common/js?h=40vfeoewuurexnhvi1o2qiknu&amp;fc=2" data-li-miniprofile-id="LI-1227296"><strong><img class="lazy-load" src="./Emanuel Rosal _ LinkedIn_files/AAEAAQAAAAAAAAi_AAAAJDIyZTBlZDdiLWYzMjEtNDJmMi1hNGVhLTk1NzM4ZDNhODFkMw.png" data-li-src="https://media.licdn.com/media/AAEAAQAAAAAAAAi_AAAAJDIyZTBlZDdiLWYzMjEtNDJmMi1hNGVhLTk1NzM4ZDNhODFkMw.png" alt=""></strong></span></a></h5><h4><a href="https://www.linkedin.com/title/desarrollador-de-software-s%C3%A9nior?trk=mprofile_title" title="Averigua más sobre este cargo">Desarrollador Sr.</a></h4><h5><span data-tracking="mcp_profile_sum" class="new-miniprofile-container /biz/miniprofile/3768727?pathWildcard=3768727" data-li-url="/biz/miniprofile/3768727?pathWildcard=3768727" data-li-getjs="https://static.licdn.com/scds/concat/common/js?h=40vfeoewuurexnhvi1o2qiknu&amp;fc=2"><strong><a href="https://www.linkedin.com/company/3768727?trk=prof-exp-company-name" dir="auto">RockBox Studios S.R.L</a></strong></span></h5></header><span class="experience-date-locale"><time>julio de 2015</time> – actualidad (11 meses)<span class="locality">San Luis</span></span><p class="description summary-field-show-more" dir="ltr">Desarrollador android / web full stack / ios</p><dl class="education-associated"><dd class="closed "><ul><li class="row-first"><h6><span dir="auto">Mobile - Android - Girls Ask Guys</span></h6><p dir="ltr"><span>Red Social de preguntas y repuestas.</span><a data-li-trk-code="prof-exp-project-more" href="https://www.linkedin.com/profile/preview?locale=es_ES&amp;trk=prof-0-sb-preview-primary-button#background-projects">Ver</a></p></li><li><h6><span dir="auto">Mobile - IOS - Hinchas</span></h6><p dir="ltr"><span>Red social para hinchas de futbol.</span><a data-li-trk-code="prof-exp-project-more" href="https://www.linkedin.com/profile/preview?locale=es_ES&amp;trk=prof-0-sb-preview-primary-button#background-projects">Ver</a></p></li><li class="row-first"><h6><span dir="auto">Web - Node JS - Oauth2 Authentication Service</span></h6><p dir="ltr"><span>Servicio de autenticacion que permite ademas dar de alta aplicaciones y registrar nuevos usuarios.
-Tecnologias: Nginx, Node...</span><a data-li-trk-code="prof-exp-project-more" href="https://www.linkedin.com/profile/preview?locale=es_ES&amp;trk=prof-0-sb-preview-primary-button#background-projects">Ver</a></p></li><li><h6><span dir="auto">Web - Node JS - Picoresa</span></h6><p dir="ltr"><span>Aplicacion web que permite crear foto libros y calendarios impresos a partir de colecciones de fotos almacenadas en la nube...</span><a data-li-trk-code="prof-exp-project-more" href="https://www.linkedin.com/profile/preview?locale=es_ES&amp;trk=prof-0-sb-preview-primary-button#background-projects">Ver</a></p></li><li class="row-first"><h6><span dir="auto">Web - Node JS - Remote Music Player</span></h6><p dir="ltr"><span>Aplicacion en tiempo real para reproducir musica de forma remota.
-Tecnologias: Socket IO, Material CSS3, NodeJS, Redis. etc</span><a data-li-trk-code="prof-exp-project-more" href="https://www.linkedin.com/profile/preview?locale=es_ES&amp;trk=prof-0-sb-preview-primary-button#background-projects">Ver</a></p></li></ul></dd></dl></div></div><div id="experience-568043083" class="editable-item section-item past-position"><div id="experience-568043083-view"><header><h5 class="experience-logo" aria-hidden="true"><a href="https://www.linkedin.com/company/208248?trk=prof-exp-company-name"><span data-tracking="mcp_profile_sum" class="new-miniprofile-container /biz/miniprofile/208248?pathWildcard=208248" data-li-url="/biz/miniprofile/208248?pathWildcard=208248" data-li-getjs="https://static.licdn.com/scds/concat/common/js?h=40vfeoewuurexnhvi1o2qiknu&amp;fc=2" data-li-miniprofile-id="LI-50274"><strong><img class="lazy-load" src="./Emanuel Rosal _ LinkedIn_files/2247979.png" data-li-src="https://media.licdn.com/media/p/2/005/0a6/27c/2247979.png" alt=""></strong></span></a></h5><h4><a href="https://www.linkedin.com/title/desarrollador-senior?trk=mprofile_title" title="Averigua más sobre este cargo">Desarrollador Sr.</a></h4><h5><span data-tracking="mcp_profile_sum" class="new-miniprofile-container /biz/miniprofile/208248?pathWildcard=208248" data-li-url="/biz/miniprofile/208248?pathWildcard=208248" data-li-getjs="https://static.licdn.com/scds/concat/common/js?h=40vfeoewuurexnhvi1o2qiknu&amp;fc=2"><strong><a href="https://www.linkedin.com/company/208248?trk=prof-exp-company-name" dir="auto">UNITECH S.A.</a></strong></span></h5></header><span class="experience-date-locale"><time>agosto de 2010</time> – <time>julio de 2015</time> (5 años)<span class="locality">PILP</span></span><p class="description summary-field-show-more" dir="ltr">Desarrollo de aplicaciones Flash (FrontEnd) y Java Enterprise Edition (BackEnd) usando motores como MS SQLServer, Oracle, Postgres interactuando con otros sistemas mediante servicios web via SOAP, RESTFUL, automatización de tareas programadas, sincronización de base de datos entre sistemas, desarrollo de ui avanzadas 100% dinámicas. Applet con Firma Digital.</p><dl class="education-associated"><dd class="closed "><ul><li class="row-first"><h6><span dir="auto">Web - Adobe Flex - J2EE - IurixWeb</span></h6><p dir="ltr"><span>Sistema del poder judicial de la Provincia de San Luis.</span><a data-li-trk-code="prof-exp-project-more" href="https://www.linkedin.com/profile/preview?locale=es_ES&amp;trk=prof-0-sb-preview-primary-button#background-projects">Ver</a></p></li><li><h6><span dir="auto">Web - Adobe Flex - J2EE - Portal Puntano</span></h6><p dir="ltr"><span>Desarrollador principal del proyecto "Portal Puntano" donde los ciudadanos de la provincia pueden realizar varios tipos de...</span><a data-li-trk-code="prof-exp-project-more" href="https://www.linkedin.com/profile/preview?locale=es_ES&amp;trk=prof-0-sb-preview-primary-button#background-projects">Ver</a></p></li><li class="row-first"><h6><span dir="auto">Web - Adobe Flex - J2EE - Tramix</span></h6><p dir="ltr"><span>Sistema de expedientes digitales de la provincia de san luis</span><a data-li-trk-code="prof-exp-project-more" href="https://www.linkedin.com/profile/preview?locale=es_ES&amp;trk=prof-0-sb-preview-primary-button#background-projects">Ver</a></p></li></ul></dd></dl></div></div><div id="experience-517865242" class="editable-item section-item past-position"><div id="experience-517865242-view"><header><h4><a href="https://www.linkedin.com/title/desarrollador-api-%2F-front-back-end-%2F-mobile?trk=mprofile_title" title="Averigua más sobre este cargo">Desarrollador Api / Front-Back End / Mobile</a></h4><h5><a href="https://www.linkedin.com/vsearch/p?company=Freelancer&amp;trk=prof-exp-company-name" name="company" title="Busca otros usuarios que hayan trabajado en esta empresa" dir="auto">Freelancer</a></h5></header><span class="experience-date-locale"><time>2011</time> – <time>2014</time> (3 años)</span><dl class="education-associated"><dd class="closed "><ul><li class="row-first"><h6><span dir="auto">Mobile - Android - Seguridad Denuncias</span></h6><p dir="ltr"><span>Desarrollador de controladores que consume json de api RESTFUL.</span><a data-li-trk-code="prof-exp-project-more" href="https://www.linkedin.com/profile/preview?locale=es_ES&amp;trk=prof-0-sb-preview-primary-button#background-projects">Ver</a></p></li><li><h6><span dir="auto">Mobile - Android - Lector de Productos Mayoristas</span></h6><p dir="ltr"><span>Aplicación Android de control de stock de productos e inventario por codigo de barras permite importar productos desde...</span><a data-li-trk-code="prof-exp-project-more" href="https://www.linkedin.com/profile/preview?locale=es_ES&amp;trk=prof-0-sb-preview-primary-button#background-projects">Ver</a></p></li><li class="row-first"><h6><span dir="auto">Web - Node JS - Seguridad Denuncias</span></h6><p dir="ltr"><span>Aplicacion web para realizar denuncias de una determinada region, integrada con Facebook, Twitter y Gmail
-Tecnologias:...</span><a data-li-trk-code="prof-exp-project-more" href="https://www.linkedin.com/profile/preview?locale=es_ES&amp;trk=prof-0-sb-preview-primary-button#background-projects">Ver</a></p></li><li><h6><span dir="auto">Web - Node JS - Aseguradoras de Riesgo de Salud</span></h6><p dir="ltr"><span>Sistema para gestionar ordenes medicas via web,
-Tecnologias: Bootstrap 3, Web Services SOAP (JS), MongoDB, NodeJS, Nginx</span><a data-li-trk-code="prof-exp-project-more" href="https://www.linkedin.com/profile/preview?locale=es_ES&amp;trk=prof-0-sb-preview-primary-button#background-projects">Ver</a></p></li><li class="row-first"><h6><span dir="auto">Web - Node JS - EatNow</span></h6><p dir="ltr"><span>Aplicacion para encontrar lugares para comer.
-Tecnologia: Node JS, Angular JS, Bootstrap ui, Mongo DB, Geoip, Mapas...</span><a data-li-trk-code="prof-exp-project-more" href="https://www.linkedin.com/profile/preview?locale=es_ES&amp;trk=prof-0-sb-preview-primary-button#background-projects">Ver</a></p></li></ul></dd></dl></div></div><script>$(function(){if(LI.Dialog){LI.Dialog().submitEvent.subscribe(function(type,args){var positionID;if(args[1]=='removePositionDialog'&&WebTracking&&WebTracking.trackUserAction){if(args[2]&&args[2].positionID){positionID=args[2].positionID;}WebTracking.trackUserAction('nprofile-edit-position-remove-submit',{positionID:positionID});}});}});</script></div></div><div id="background-education-container" class="background-section" data-li-template="education_section"><div id="background-education" class="background-education edit-default"><h3>Educación</h3><div id="education-211113042" class="editable-item section-item"><div id="education-211113042-view"><div class="education first"><header><h4 class="summary fn org" dir="auto"><a href="https://www.linkedin.com/edu/alumni?name=ULP+-+Universidad+de+La+Punta&amp;trk=prof-edu-school-name" title="Encuentra a otros miembros que estudiaron en ULP - Universidad de La Punta">ULP - Universidad de La Punta</a></h4><h5><span class="degree">Técnico Desarrollador de Software</span></h5>
-<span class="honors-date"><time>2009 - 2011</time></span>
-</header><span class="education-date"></span></div></div></div><script>if(LI.Dialog){LI.Dialog().submitEvent.subscribe(function(type,args){var educationID;if(args[1]=='removeEducationDialog'&&WebTracking&&WebTracking.trackUserAction){if(args[2]&&args[2].educationID){educationID=args[2].educationID;}WebTracking.trackUserAction('nprofile-edit-education-remove-submit',{educationID:educationID});}});}</script></div></div>
-<div id="background-courses-container" class="background-section" data-li-template="courses_section"><div id="background-courses" class="background-courses" style="margin-bottom: 50px; border-bottom:0px"><h3>Cursos</h3><div id="courses" class="editable-item"><div id="courses-view"><div class="section-item"><h4>Cursos independientes</h4><ul class="courses-listing"><li>PHP y MySQL </li><li>Java 275 </li><li>Java 310 </li></ul></div></div></div></div></div>
-<div id="background-skills-container" class="background-section" data-li-template="skills_section"></div><div id="background-additional-info-container" class="background-section" data-li-template="additional_info_section"></div></div></div><div style="height: 90px; width: 100%"></div>
-<div id="background" class="profile-background" style="box-shadow:none;    border: 1px solid #E9E9E9;"><div class="background-content ">
-  <h2>Premios</h2>
-<div id="background-honors-container" class="background-section" data-li-template="honors_section"><div id="background-honors" class="background-honors" style="border-bottom:0px"><h3>Reconocimientos y premios</h3><div id="honors-430" class="editable-item section-item"><div id="honors-430-view"><div class="honoraward  first"><h4 class="summary fn org"><span dir="auto">Mejor Aplicación</span></h4><h5><span dir="auto">San Luis Digital - Universidad La Punta - Hackathon</span></h5><span class="honors-date"><time>2013</time></span><p class="description summary-field-show-more" dir="ltr" id="control_gen_9">Primer premio en mejor aplicación "Mi Próximo Colectivo" desarrollada en JQuery Mobile, Java Script, CSS3, PHP y Api de Google Maps. Aplicación que permite ver los recorridos de los colectivos en tiempo real, ver parada mas cercana, calculo de tiempo estimado del colectivo hasta nuestra posición actual, sensores de sonidos cuando un colectivo pasa por determinado lugar. etc.<br>
-<br>
-</p><script id="controlinit-dust-server-60546788-23" type="text/javascript+initialized" class="li-control">LI.Controls.addControl("control-dust-server-60546788-23","ShowMore",{charCount:450,showMoreText:"más",showLessText:"menos"})</script><script type="text/javascript">if(dust&&dust.jsControl){if(!dust.jsControl.flushControlIds){dust.jsControl.flushControlIds="";}else{dust.jsControl.flushControlIds+=",";}dust.jsControl.flushControlIds+="control-dust-server-60546788-23";}</script></div></div></div><script>if(LI.Dialog){LI.Dialog().submitEvent.subscribe(function(type,args){var honorawardID;if(args[1]=='removeHonorawardDialog'&&WebTracking&&WebTracking.trackUserAction){if(args[2]&&args[2].honorawardID){honorawardID=args[2].honorawardID;}WebTracking.trackUserAction('nprofile-edit-honoraward-remove-submit',{honorawardID:honorawardID});}});}</script></div></div>
-</div></div>
-
-
-
-<div id="background" class="profile-background" style="box-shadow:none;    border: 1px solid #E9E9E9;"><h2>Skills</h2><div class="background-content "><div id="background-experience-container" class="background-section" data-li-template="experience_section"></div>
-<div id="background-skills-container" class="background-section" data-li-template="skills_section" style="margin-bottom: 145px"><div id="background-skills" class="background-skills edit-default" style="border-bottom:0"><div class="hd"><h3>Aptitudes</h3></div>
-<div id="skills-item" class="editable-item"><div id="skills-item-view"><div id="profile-skills"><h5>O.S.</h5><ul class="skills-section compact-view"><li data-endorsed-item-name="MongoDB" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">FreeBSD</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"></a></div></li><li data-endorsed-item-name="Amazon Web Services" class="endorse-item no-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="0">0</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Gentoo</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Redis" class="endorse-item no-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="0">0</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Amazon Server</span></span></span></div></li>
-<li data-endorsed-item-name="Redis" class="endorse-item no-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="0">0</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Heroku Server</span></span></span></div></li><li data-endorsed-item-name="Blackberry applications" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Debian / Ubuntu </span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Nginx" class="endorse-item no-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="0">0</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Arch Linux</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="WordPress" class="endorse-item no-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="0">0</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">OSX</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Windows</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Hibernate" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="5">5</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Hibernate</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Linux System Administration" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="3">3</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Linux System...</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Socket Programming" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="2">2</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Socket Programming</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Tomcat" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="5">5</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Tomcat</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Apache" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="5">5</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Apache</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Unix" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="2">2</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Unix</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Bots" class="endorse-item no-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="0">0</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Bots</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Git" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="3">3</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Git</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="SVN" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="2">2</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">SVN</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="ActionScript" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="2">2</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">ActionScript</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Adobe Flex" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="4">4</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Adobe Flex</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="BIRT" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="2">2</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">BIRT</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="ASP.NET" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="6">6</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">ASP.NET</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Crystal Reports" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="3">3</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Crystal Reports</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Maven" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="2">2</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Maven</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="SOAP" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="6">6</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">SOAP</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="RESTful WebServices" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="2">2</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">RESTful WebServices</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Shell Scripting" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="1">1</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Shell Scripting</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Linux Server" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="3">3</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Linux Server</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Digital Signatures" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="1">1</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Digital Signatures</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Java EE" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="12">12</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Java EE</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li class="endorse-item" id="see-more-less-skill"><script id="controlinit-dust-server-6606030-24" type="text/javascript+initialized" class="li-control">LI.Controls.addControl("control-dust-server-6606030-24","ToggleClass",{classname:'view-all-skills',on:'#profile-skills'})</script><script type="text/javascript">if(dust&&dust.jsControl){if(!dust.jsControl.flushControlIds){dust.jsControl.flushControlIds="";}else{dust.jsControl.flushControlIds+=",";}dust.jsControl.flushControlIds+="control-dust-server-6606030-24";}</script></li></ul></div><script id="controlinit-dust-server-6606030-25" type="text/javascript+initialized" class="li-control">LI.Controls.addControl("control-dust-server-6606030-25","ProfileSectionSkills",{viewerId:'329011289',facePilePicsAjaxUrl:'\/profile\/profile-v2-picture-urls?ids=329011289%2C77118685%2C30460761%2C123024538%2C196749099%2C354116233%2C237052274%2C350587057%2C327926226%2C250173429%2C77227963%2C38757677%2C28269324%2C272448794%2C71750830%2C131742579%2C123335605%2C257592759%2C113247345%2C273349945%2C109875576%2C75775793%2C238480257%2C188763896%2C243892851%2C449096382%2C28254416',facePileEndorserIds:[[273349945,30460761,77227963,272448794,77118685,196749099,188763896],[273349945,30460761,77227963,250173429,272448794],[123024538,131742579,71750830,273349945,350587057,30460761,28269324,257592759,237052274,243892851,449096382,354116233],[77227963,250173429,109875576,272448794,77118685,196749099,188763896],[237052274,30460761,354116233,113247345,28254416,75775793,327926226,77227963,38757677,250173429,109875576,272448794],[273349945,77227963,250173429,272448794,238480257,123335605,77118685,196749099,188763896],[273349945,77227963,250173429,272448794,238480257,123335605,77118685,196749099],[113247345,273349945,77227963,250173429,196749099],[],[]],dialogConfig:{dustDataUrl:'\/profile\/endorser-info-dialog?csrfToken=ajax%3A0397935712489388117',width:600,name:'skills-endorsers-dialog',className:'skills-endorser-dialog dialog-v2',type:'task-modeless',disableFocusOnClose:true,content:{title:'Validadores',dustTemplate:'tl/apps/profile/endorsements/endorser_Info_dialog'},dependencies:{jsFiles:'https://static.licdn.com/scds/concat/common/js?h=2u0oucd4aga6iz8worfbsb377&fc=2'}},endorsementData:{recipientId:'329011289',recipientType:'member'},distance:1,isSelf:false,maxEndorsementCount:99,endorseURL:'\/profile\/endorse?_ed=0_2KjZg6oXb2V2F89fO9b1Jr9vVefjgmMy5Eg5IR_1O8f&csrfToken=ajax%3A0397935712489388117',unendorseURL:'\/profile\/unendorse?_ed=0_2KjZg6oXb2V2F89fO9b1Jr9vVefjgmMy5Eg5IR_1O8f&csrfToken=ajax%3A0397935712489388117',i18nMaxEndorsements:'Más de 99',i18nEndorseLimitExceeded:'Has llegado al límite diario de validaciones que puedes hacer.',i18nUnendorseLimitExceeded:'Has llegado al límite diario de validaciones que puedes eliminar.',i18nGenericErrorMessage:'Lo sentimos. Ha habido un problema. Vuelve a intentarlo más tarde.'})</script><script type="text/javascript">if(dust&&dust.jsControl){if(!dust.jsControl.flushControlIds){dust.jsControl.flushControlIds="";}else{dust.jsControl.flushControlIds+=",";}dust.jsControl.flushControlIds+="control-dust-server-6606030-25";}</script></div></div><div id="skills-item" class="editable-item"><div id="skills-item-view"><div id="profile-skills"><h5>Backend</h5><ul class="skills-section compact-view"><li data-endorsed-item-name="Amazon Web Services" class="endorse-item no-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="0">0</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Node JS</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Redis" class="endorse-item no-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="0">0</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">ES6</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-<li data-endorsed-item-name="Blackberry applications" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Socket.IO</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-<li data-endorsed-item-name="Blackberry applications" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Express JS</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-<li data-endorsed-item-name="Blackberry applications" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Koa JS</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-<li data-endorsed-item-name="Blackberry applications" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Npm</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Blackberry applications" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Passport JS</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Nginx" class="endorse-item no-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="0">0</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Cloud Storage S3</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-
-<li data-endorsed-item-name="WordPress" class="endorse-item no-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="0">0</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Geo IP</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="WordPress" class="endorse-item no-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="0">0</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Oauth2</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-<li data-endorsed-item-name="WordPress" class="endorse-item no-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="0">0</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Sequelize</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="WordPress" class="endorse-item no-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="0">0</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Web Crawler</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Realtime Apps</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-<li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Wordpress</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-<li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Restful</span></span></span></div></li>
-<li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Soap</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-
-<li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Bash</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-
-<li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Lua</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-
-
-<li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Java EE</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-<li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">JSF</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Hibernate</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Spring</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">ASP.NET</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Nginx</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-<li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Apache</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-<li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">MongoDB</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Redis</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-
-<li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">MariaDB</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">MSSQL</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-
-<li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Oracle</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">SQLite</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-<li data-endorsed-item-name="Hibernate" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="5">5</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Hibernate</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Linux System Administration" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="3">3</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Linux System...</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Socket Programming" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="2">2</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Socket Programming</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Tomcat" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="5">5</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Tomcat</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Apache" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="5">5</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Apache</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Unix" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="2">2</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Unix</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Bots" class="endorse-item no-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="0">0</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Bots</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Git" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="3">3</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Git</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="SVN" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="2">2</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">SVN</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="ActionScript" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="2">2</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">ActionScript</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Adobe Flex" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="4">4</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Adobe Flex</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="BIRT" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="2">2</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">BIRT</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="ASP.NET" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="6">6</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">ASP.NET</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Crystal Reports" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="3">3</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Crystal Reports</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Maven" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="2">2</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Maven</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="SOAP" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="6">6</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">SOAP</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="RESTful WebServices" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="2">2</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">RESTful WebServices</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Shell Scripting" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="1">1</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Shell Scripting</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Linux Server" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="3">3</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Linux Server</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Digital Signatures" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="1">1</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Digital Signatures</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Java EE" class="endorse-item has-endorsements extra-skill endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="12">12</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Java EE</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li class="endorse-item" id="see-more-less-skill"><script id="controlinit-dust-server-6606030-24" type="text/javascript+initialized" class="li-control">LI.Controls.addControl("control-dust-server-6606030-24","ToggleClass",{classname:'view-all-skills',on:'#profile-skills'})</script><script type="text/javascript">if(dust&&dust.jsControl){if(!dust.jsControl.flushControlIds){dust.jsControl.flushControlIds="";}else{dust.jsControl.flushControlIds+=",";}dust.jsControl.flushControlIds+="control-dust-server-6606030-24";}</script></li></ul></div>
-<div id="profile-skills"><h5>Frontend</h5><ul class="skills-section compact-view"><li data-endorsed-item-name="MongoDB" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">HTML5</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"></a></div></li><li data-endorsed-item-name="Amazon Web Services" class="endorse-item no-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="0">0</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">CSS3</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Redis" class="endorse-item no-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="0">0</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Material Design</span></span></span></div></li><li data-endorsed-item-name="Blackberry applications" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Bootstrap</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Nginx" class="endorse-item no-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="0">0</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Angular JS</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="WordPress" class="endorse-item no-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><a class="endorse-count" href="javascript:void(0)" role="button" title="Ver validadores"><span class="num-endorsements" data-count="0">0</span></a><span class="endorse-item-name"><span class="endorse-item-name-text">Vue JS</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">jQuery Mobile</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-
-<li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Grunt / Gulp</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Bower</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-<li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Webpack</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-<li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Action Script</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-
-<li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">ES6</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-
-<li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Jade</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-
-
-
-<li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Stylus</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-<li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Leaftlet Map</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li><li data-endorsed-item-name="Spring" class="endorse-item has-endorsements endorsable" data-endorsement-id=""><div><span class="skill-pill"><span class="endorse-item-name"><span class="endorse-item-name-text">Google Map</span></span></span><a href="javascript:void(0)" role="button" class="endorse-button"><span class="endorsing"><span class="endorse-plus">&nbsp;</span><span class="endorse-minus">&nbsp;</span></span></a></div></li>
-
-
-
-
-
-</ul></div><script id="controlinit-dust-server-6606030-25" type="text/javascript+initialized" class="li-control">LI.Controls.addControl("control-dust-server-6606030-25","ProfileSectionSkills",{viewerId:'329011289',facePilePicsAjaxUrl:'\/profile\/profile-v2-picture-urls?ids=329011289%2C77118685%2C30460761%2C123024538%2C196749099%2C354116233%2C237052274%2C350587057%2C327926226%2C250173429%2C77227963%2C38757677%2C28269324%2C272448794%2C71750830%2C131742579%2C123335605%2C257592759%2C113247345%2C273349945%2C109875576%2C75775793%2C238480257%2C188763896%2C243892851%2C449096382%2C28254416',facePileEndorserIds:[[273349945,30460761,77227963,272448794,77118685,196749099,188763896],[273349945,30460761,77227963,250173429,272448794],[123024538,131742579,71750830,273349945,350587057,30460761,28269324,257592759,237052274,243892851,449096382,354116233],[77227963,250173429,109875576,272448794,77118685,196749099,188763896],[237052274,30460761,354116233,113247345,28254416,75775793,327926226,77227963,38757677,250173429,109875576,272448794],[273349945,77227963,250173429,272448794,238480257,123335605,77118685,196749099,188763896],[273349945,77227963,250173429,272448794,238480257,123335605,77118685,196749099],[113247345,273349945,77227963,250173429,196749099],[],[]],dialogConfig:{dustDataUrl:'\/profile\/endorser-info-dialog?csrfToken=ajax%3A0397935712489388117',width:600,name:'skills-endorsers-dialog',className:'skills-endorser-dialog dialog-v2',type:'task-modeless',disableFocusOnClose:true,content:{title:'Validadores',dustTemplate:'tl/apps/profile/endorsements/endorser_Info_dialog'},dependencies:{jsFiles:'https://static.licdn.com/scds/concat/common/js?h=2u0oucd4aga6iz8worfbsb377&fc=2'}},endorsementData:{recipientId:'329011289',recipientType:'member'},distance:1,isSelf:false,maxEndorsementCount:99,endorseURL:'\/profile\/endorse?_ed=0_2KjZg6oXb2V2F89fO9b1Jr9vVefjgmMy5Eg5IR_1O8f&csrfToken=ajax%3A0397935712489388117',unendorseURL:'\/profile\/unendorse?_ed=0_2KjZg6oXb2V2F89fO9b1Jr9vVefjgmMy5Eg5IR_1O8f&csrfToken=ajax%3A0397935712489388117',i18nMaxEndorsements:'Más de 99',i18nEndorseLimitExceeded:'Has llegado al límite diario de validaciones que puedes hacer.',i18nUnendorseLimitExceeded:'Has llegado al límite diario de validaciones que puedes eliminar.',i18nGenericErrorMessage:'Lo sentimos. Ha habido un problema. Vuelve a intentarlo más tarde.'})</script><script type="text/javascript">if(dust&&dust.jsControl){if(!dust.jsControl.flushControlIds){dust.jsControl.flushControlIds="";}else{dust.jsControl.flushControlIds+=",";}dust.jsControl.flushControlIds+="control-dust-server-6606030-25";}</script></div></div></div></div><div id="background-projects-container" class="background-section" data-li-template="projects_section"></div><div id="background-additional-info-container" class="background-section" data-li-template="additional_info_section"></div></div></div><div style="height: 100px; width: 100%"></div>
-
-<div id="background" class="profile-background" style="box-shadow:none;    border: 1px solid #E9E9E9;"><h2>Experiencia</h2><div class="background-content ">
-<div id="background-projects-container" class="background-section" data-li-template="projects_section" style="margin-top: 30px"><div class="background-projects"><h3>Proyectos</h3><div id="project-611732790" class="editable-item section-item"><div id="project-611732790-view"><hgroup><h4 class="summary fn org"><span dir="auto">Mobile - Android - Girls Ask Guys</span></h4></hgroup><span class="projects-date"><time>febrero de 2016</time></span><p class="description summary-field-show-more" dir="ltr" id="control_gen_11">Colaborador en Red Social de preguntas y repuestas.</p><script id="controlinit-dust-server-6606030-26" type="text/javascript+initialized" class="li-control">LI.Controls.addControl("control-dust-server-6606030-26","ShowMore",{charCount:400,showMoreText:"más",showLessText:"menos"})</script><script type="text/javascript">if(dust&&dust.jsControl){if(!dust.jsControl.flushControlIds){dust.jsControl.flushControlIds="";}else{dust.jsControl.flushControlIds+=",";}dust.jsControl.flushControlIds+="control-dust-server-6606030-26";}</script></div></div><div id="project-80832253" class="editable-item section-item"><div id="project-80832253-view"><hgroup><h4 class="summary fn org"><span dir="auto">Mobile - IOS - Hinch.as</span></h4></hgroup><span class="projects-date"><time>octubre de 2015</time></span><p class="description summary-field-show-more" dir="ltr" id="control_gen_12">Colaborador en Red social para hinchas de futbol.</p><script id="controlinit-dust-server-6606030-27" type="text/javascript+initialized" class="li-control">LI.Controls.addControl("control-dust-server-6606030-27","ShowMore",{charCount:400,showMoreText:"más",showLessText:"menos"})</script><script type="text/javascript">if(dust&&dust.jsControl){if(!dust.jsControl.flushControlIds){dust.jsControl.flushControlIds="";}else{dust.jsControl.flushControlIds+=",";}dust.jsControl.flushControlIds+="control-dust-server-6606030-27";}</script></div></div><div id="project-580" class="editable-item section-item"><div id="project-580-view"><hgroup><h4 class="summary fn org"><a href="https://www.linkedin.com/redir/redirect?url=https%3A%2F%2Fgithub%2Ecom%2Fw4rlock%2Fbb_cascade_concerts&amp;urlhash=thWg&amp;trk=prof-project-name-link" target="_blank"><span dir="auto">Mobile - Black Berry Z10 - Conciertos</span><span class="external-link-indicator">(Enlace)</span></a></h4></hgroup><span class="projects-date"><time>enero de 2014</time></span><p class="description summary-field-show-more" dir="ltr" id="control_gen_13">Aplicación de fechas conciertos de Ticketeck desarrollada en Cascade <br>
-Tecnologías: Node JS, Web Scraping (Genero mi propia cacheDB con el html de otro sitio), Restful JSON Web Services..</p><script id="controlinit-dust-server-6606030-28" type="text/javascript+initialized" class="li-control">LI.Controls.addControl("control-dust-server-6606030-28","ShowMore",{charCount:400,showMoreText:"más",showLessText:"menos"})</script><script type="text/javascript">if(dust&&dust.jsControl){if(!dust.jsControl.flushControlIds){dust.jsControl.flushControlIds="";}else{dust.jsControl.flushControlIds+=",";}dust.jsControl.flushControlIds+="control-dust-server-6606030-28";}</script></div></div>
-<div id="project-577" class="editable-item section-item"><div id="project-577-view"><hgroup><h4 class="summary fn org"><span dir="auto">Mobile - Android - Lector de Productos Mayoristas</span></h4></hgroup><span class="projects-date"><time>diciembre de 2011</time></span><p class="description summary-field-show-more" dir="ltr" id="control_gen_15">Aplicación Android de control de stock de productos e inventario por código de barras permite importar productos desde archivo CSV a SQLite y exportar la base de stock a determinado servidor.</p><script id="controlinit-dust-server-6606030-30" type="text/javascript+initialized" class="li-control">LI.Controls.addControl("control-dust-server-6606030-30","ShowMore",{charCount:400,showMoreText:"más",showLessText:"menos"})</script><script type="text/javascript">if(dust&&dust.jsControl){if(!dust.jsControl.flushControlIds){dust.jsControl.flushControlIds="";}else{dust.jsControl.flushControlIds+=",";}dust.jsControl.flushControlIds+="control-dust-server-6606030-30";}</script></div></div>
-<div id="project-998" class="editable-item section-item"><div id="project-998-view"><hgroup><h4 class="summary fn org"><span dir="auto">Mobile - Android - Seguridad Denuncias</span></h4></hgroup><span class="projects-date"><time>junio de 2014</time></span><p class="description summary-field-show-more" dir="ltr" id="control_gen_14">Desarrollador de controladores que consume json de api RESTFUL.</p><script id="controlinit-dust-server-6606030-29" type="text/javascript+initialized" class="li-control">LI.Controls.addControl("control-dust-server-6606030-29","ShowMore",{charCount:400,showMoreText:"más",showLessText:"menos"})</script><script type="text/javascript">if(dust&&dust.jsControl){if(!dust.jsControl.flushControlIds){dust.jsControl.flushControlIds="";}else{dust.jsControl.flushControlIds+=",";}dust.jsControl.flushControlIds+="control-dust-server-6606030-29";}</script></div></div><script>if(LI.Dialog){LI.Dialog().submitEvent.subscribe(function(type,args){var projectID;if(args[1]=='removeProjectDialog'&&WebTracking&&WebTracking.trackUserAction){if(args[2]&&args[2].projectID){projectID=args[2].projectID;}WebTracking.trackUserAction('nprofile-edit-project-remove-submit',{projectID:projectID});}});}</script></div></div><div id="background-additional-info-container" class="background-section" data-li-template="additional_info_section"></div></div></div>
-
-
-
-<div id="background" class="profile-background" style="box-shadow:none;    border: 1px solid #E9E9E9; padding-bottom:40px" border:="" solid=""><div class="background-content ">
-<div id="background-projects-container" class="background-section" data-li-template="projects_section"><div class="background-projects">
-<div id="project-407727742" class="editable-item section-item"><div id="project-407727742-view"><hgroup><h4 class="summary fn org"><span dir="auto">Web - Node JS - Oauth2  Service</span></h4></hgroup><span class="projects-date"><time>marzo de 2016</time></span><p class="description summary-field-show-more" dir="ltr" id="control_gen_16">Servicio de autenticación que permite ademas dar de alta aplicaciones y registrar nuevos usuarios. <br>
-Tecnologías: Nginx, Node JS, Redis DB, Vue JS, Material Design Lite</p><script id="controlinit-dust-server-6606030-31" type="text/javascript+initialized" class="li-control">LI.Controls.addControl("control-dust-server-6606030-31","ShowMore",{charCount:400,showMoreText:"más",showLessText:"menos"})</script><script type="text/javascript">if(dust&&dust.jsControl){if(!dust.jsControl.flushControlIds){dust.jsControl.flushControlIds="";}else{dust.jsControl.flushControlIds+=",";}dust.jsControl.flushControlIds+="control-dust-server-6606030-31";}</script></div></div><div id="project-1118339680" class="editable-item section-item"><div id="project-1118339680-view"><hgroup><h4 class="summary fn org"><span dir="auto">Web - Node JS - Remote Music Player</span></h4></hgroup><span class="projects-date"><time>noviembre de 2015</time></span><p class="description summary-field-show-more" dir="ltr" id="control_gen_19">Aplicación en tiempo real para reproducir musica de forma remota.<br>
-<br>
-Tecnologías: Mpd, mpc, Socket IO, Material Design, NodeJS, Redis. etc</p><script id="controlinit-dust-server-6606030-34" type="text/javascript+initialized" class="li-control">LI.Controls.addControl("control-dust-server-6606030-34","ShowMore",{charCount:400,showMoreText:"más",showLessText:"menos"})</script><script type="text/javascript">if(dust&&dust.jsControl){if(!dust.jsControl.flushControlIds){dust.jsControl.flushControlIds="";}else{dust.jsControl.flushControlIds+=",";}dust.jsControl.flushControlIds+="control-dust-server-6606030-34";}</script></div></div>
-<div id="project-1306745730" class="editable-item section-item"><div id="project-1306745730-view"><hgroup><h4 class="summary fn org"><span dir="auto">Web - Node JS - EatNow</span></h4></hgroup><span class="projects-date"><time>noviembre de 2014</time></span><p class="description summary-field-show-more" dir="ltr" id="control_gen_22">Aplicación para encontrar lugares para comer.<br>
-<br>
-Tecnologías: Node JS, Angular JS, Bootstrap ui, Mongo DB, Geoip, Mapas (leaftlet)</p><script id="controlinit-dust-server-6606030-37" type="text/javascript+initialized" class="li-control">LI.Controls.addControl("control-dust-server-6606030-37","ShowMore",{charCount:400,showMoreText:"más",showLessText:"menos"})</script><script type="text/javascript">if(dust&&dust.jsControl){if(!dust.jsControl.flushControlIds){dust.jsControl.flushControlIds="";}else{dust.jsControl.flushControlIds+=",";}dust.jsControl.flushControlIds+="control-dust-server-6606030-37";}</script></div></div><script>if(LI.Dialog){LI.Dialog().submitEvent.subscribe(function(type,args){var projectID;if(args[1]=='removeProjectDialog'&&WebTracking&&WebTracking.trackUserAction){if(args[2]&&args[2].projectID){projectID=args[2].projectID;}WebTracking.trackUserAction('nprofile-edit-project-remove-submit',{projectID:projectID});}});}</script></div></div><div id="background-additional-info-container" class="background-section" data-li-template="additional_info_section"></div></div></div><div style="height: 100px; width: 100%"></div>
-<div id="background" class="profile-background" style="box-shadow:none;  height: 1110px;  border: 1px solid #E9E9E9;" border:="" solid=""><div class="background-content ">
-<div id="background-projects-container" class="background-section" data-li-template="projects_section"><div class="background-projects">
-<h3>Proyectos</h3>
-  <div id="project-1306324365" class="editable-item section-item"><div id="project-1306324365-view"><hgroup><h4 class="summary fn org"><a href="https://www.linkedin.com/redir/redirect?url=http%3A%2F%2Fwww%2Epicoresa%2Ecom&amp;urlhash=25sF&amp;trk=prof-project-name-link" target="_blank"><span dir="auto">Web - Node JS - Picoresa</span><span class="external-link-indicator">(Enlace)</span></a></h4></hgroup><span class="projects-date"><time>marzo de 2015</time></span><p class="description summary-field-show-more" dir="ltr" id="control_gen_17">Aplicación web que permite crear foto libros y calendarios impresos a partir de colecciones de fotos almacenadas en la nube por el usuario.<br>
-<br>
-Tecnologías: Nginx, Node.JS, Angular JS, Latex, Amazon Web Services (S3), Sqlite, WebFonts, Mercado Pago, Cron Jobs... Etc</p><script id="controlinit-dust-server-6606030-32" type="text/javascript+initialized" class="li-control">LI.Controls.addControl("control-dust-server-6606030-32","ShowMore",{charCount:400,showMoreText:"más",showLessText:"menos"})</script><script type="text/javascript">if(dust&&dust.jsControl){if(!dust.jsControl.flushControlIds){dust.jsControl.flushControlIds="";}else{dust.jsControl.flushControlIds+=",";}dust.jsControl.flushControlIds+="control-dust-server-6606030-32";}</script></div></div><div id="project-408349425" class="editable-item section-item"><div id="project-408349425-view"><hgroup><h4 class="summary fn org"><span dir="auto">Web - Node JS - Automatización de Administradores</span></h4></hgroup><span class="projects-date"><time>abril de 2016</time></span><p class="description summary-field-show-more" dir="ltr" id="control_gen_18">Servicio que permite definir varios modelos de datos mediante una interfaz grafica para generar administradores de api restful y realizar operaciones de tipo CRUD. usando mongo db.<br>
-<br>
-Tecnologías: Nginx, ES6, Node JS, MongoDB, Vue JS, Webpack, Material Design Lite</p><script id="controlinit-dust-server-6606030-33" type="text/javascript+initialized" class="li-control">LI.Controls.addControl("control-dust-server-6606030-33","ShowMore",{charCount:400,showMoreText:"más",showLessText:"menos"})</script><script type="text/javascript">if(dust&&dust.jsControl){if(!dust.jsControl.flushControlIds){dust.jsControl.flushControlIds="";}else{dust.jsControl.flushControlIds+=",";}dust.jsControl.flushControlIds+="control-dust-server-6606030-33";}</script></div></div>
-<div id="project-841" class="editable-item section-item"><div id="project-841-view"><hgroup><h4 class="summary fn org"><span dir="auto">Web - Node JS - Seguridad Denuncias</span></h4></hgroup><span class="projects-date"><time>abril de 2014</time></span><p class="description summary-field-show-more" dir="ltr" id="control_gen_20">Aplicación web para realizar denuncias de una determinada region, integrada con Facebook, Twitter y Gmail<br>
-Tecnologías: Bootstrap 3.1, JQuery, CSS3, Google Maps API, AngularJS, NodeJS, MongoDB, Grunt/Gulp, Bower, Nginx, Authenticacion por token ... etc<br>
-</p><script id="controlinit-dust-server-6606030-35" type="text/javascript+initialized" class="li-control">LI.Controls.addControl("control-dust-server-6606030-35","ShowMore",{charCount:400,showMoreText:"más",showLessText:"menos"})</script><script type="text/javascript">if(dust&&dust.jsControl){if(!dust.jsControl.flushControlIds){dust.jsControl.flushControlIds="";}else{dust.jsControl.flushControlIds+=",";}dust.jsControl.flushControlIds+="control-dust-server-6606030-35";}</script></div></div>
-<div id="project-838" class="editable-item section-item"><div id="project-838-view"><hgroup><h4 class="summary fn org"><span dir="auto">Web - Node JS - Aseguradoras de Riesgo de Salud</span></h4></hgroup><span class="projects-date"><time>abril de 2014</time></span><p class="description summary-field-show-more" dir="ltr" id="control_gen_21">Sistema para gestionar ordenes medicas via web, <br>
-Tecnologías: Bootstrap 3, Web Services SOAP (JS), MongoDB, NodeJS, Nginx</p><script id="controlinit-dust-server-6606030-36" type="text/javascript+initialized" class="li-control">LI.Controls.addControl("control-dust-server-6606030-36","ShowMore",{charCount:400,showMoreText:"más",showLessText:"menos"})</script><script type="text/javascript">if(dust&&dust.jsControl){if(!dust.jsControl.flushControlIds){dust.jsControl.flushControlIds="";}else{dust.jsControl.flushControlIds+=",";}dust.jsControl.flushControlIds+="control-dust-server-6606030-36";}</script></div></div>
-
-<div id="project-1306824482" class="entity editable-item section-item"><div id="project-1306824482-view" class="edit-action-area" data-trk="{&quot;componentKey&quot;: &quot;profile-edit-project-form&quot;, &quot;infoParams&quot;: {&quot;source&quot;: &quot;prof-edit-background-edit_project-link&quot;, &quot;projectID&quot; :&quot;1306824482&quot;}}"><header><h4 class="entity-control-field"><div class="main-header-field summary fn org field" data-edit-field="projectTitle-editProjectForm"><span class="field-text" dir="ltr">Web - Adobe Flex - J2EE - IurixWeb</span></div></h4></header><div class="date-header-field projects-date field" data-edit-field="month-startDate-lifespan-editProjectForm"><span class="field-text"><time>enero de 2012</time></span></div><p class="body-field field description" title="Hacer clic para editar" data-edit-field="projectDescription-editProjectForm"><span class="field-text" dir="ltr">Sistema del poder judicial de la Provincia de San Luis.</span></p></div></div>
-  <div id="project-1000" class="editable-item section-item"><div id="project-1000-view"><hgroup><h4 class="summary fn org"><a href="https://www.linkedin.com/redir/redirect?url=http%3A%2F%2Fwww%2Epuntano%2Enet%2Fweb%2Fguest&amp;urlhash=N9-8&amp;trk=prof-project-name-link" target="_blank"><span dir="auto">Web - Adobe Flex - J2EE - Portal Puntano</span><span class="external-link-indicator">(Enlace)</span></a></h4></hgroup><span class="projects-date"><time>enero de 2012</time></span><p class="description summary-field-show-more" dir="ltr" id="control_gen_24">Desarrollador principal del proyecto "Portal Puntano" donde los ciudadanos de la provincia pueden realizar varios tipos de tramites como: Consulta recibo de sueldo, sacar turno medico, denuncia defensa del consumidor, Historia clinica digital .etc</p><script id="controlinit-dust-server-6606030-39" type="text/javascript+initialized" class="li-control">LI.Controls.addControl("control-dust-server-6606030-39","ShowMore",{charCount:400,showMoreText:"más",showLessText:"menos"})</script><script type="text/javascript">if(dust&&dust.jsControl){if(!dust.jsControl.flushControlIds){dust.jsControl.flushControlIds="";}else{dust.jsControl.flushControlIds+=",";}dust.jsControl.flushControlIds+="control-dust-server-6606030-39";}</script></div></div>
-<div id="project-1306863933" class="editable-item section-item"><div id="project-1306863933-view"><hgroup><h4 class="summary fn org"><span dir="auto">Web - Adobe Flex - J2EE - Tramix</span></h4></hgroup><span class="projects-date"><time>enero de 2012</time></span><p class="description summary-field-show-more" dir="ltr" id="control_gen_25">Sistema de expedientes digitales de la provincia de San Luis</p><script id="controlinit-dust-server-6606030-40" type="text/javascript+initialized" class="li-control">LI.Controls.addControl("control-dust-server-6606030-40","ShowMore",{charCount:400,showMoreText:"más",showLessText:"menos"})</script><script type="text/javascript">if(dust&&dust.jsControl){if(!dust.jsControl.flushControlIds){dust.jsControl.flushControlIds="";}else{dust.jsControl.flushControlIds+=",";}dust.jsControl.flushControlIds+="control-dust-server-6606030-40";}</script></div></div><script>if(LI.Dialog){LI.Dialog().submitEvent.subscribe(function(type,args){var projectID;if(args[1]=='removeProjectDialog'&&WebTracking&&WebTracking.trackUserAction){if(args[2]&&args[2].projectID){projectID=args[2].projectID;}WebTracking.trackUserAction('nprofile-edit-project-remove-submit',{projectID:projectID});}});}</script></div></div><div id="background-additional-info-container" class="background-section" data-li-template="additional_info_section"></div></div></div><div style="height: 40px; width: 100%"></div>
-
-
-
-<div id="groups-container">
-<script id="profile_v2_groups" type="fs/embed+m"></script><script type="text/javascript">fs.dupeXHR("profile_v2_groups","profile_v2_connections",{"renderControl":"custom","templateId":"profile_v2_groups"});</script>
-</div>
-<div id="following-container">
-<script id="profile_v2_follow" type="fs/embed+m"></script><script type="text/javascript">fs.dupeXHR("profile_v2_follow","profile_v2_connections",{"renderControl":"custom","templateId":"profile_v2_follow"});</script>
-</div>
-</div>
-
-</div>
-<div id="page-loading"></div>
-<div id="alert-a11y"></div>
-<script type="text/javascript">fs._server.fire("profile_v2_view_tracking",{event:"after",type:"html"});</script>
-
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body></html>
+        <div id="profile">
+          <div id="background" class="card profile-background">
+            <span class="card-title">Personal Data</span>
+            <div class="background-content">
+              <div id="background-certifications-container" class="background-section"
+                data-li-template="certification_section">
+                <div class="row">
+                  <div class="col-7" style="display: flex;">
+                    <div class="profile-img-container">
+                      <img class="profile-img"
+                        src="https://media-exp1.licdn.com/dms/image/C4D03AQGbERu3rB8QUQ/profile-displayphoto-shrink_400_400/0/1601650159345?e=1614211200&amp;v=beta&amp;t=bZrLI8sQ9Vy_Vf91ZwyU-Efh6y09UuiVJ7hHb_dxnl8">
+                    </div>
+                    <div class="profile-name-container">
+                      <h2 class="profile-name">EMANUEL</h2>
+                      <h2 class="profile-surname">ROSAL</h2>
+                      <h2 class="profile-rol"> Architect CloudOps</h2>
+                    </div>
+                  </div>
+
+                  <div class="col-5 personal-data-info">
+                    <div class="row">
+                      <div class="col-5 personal-data-key">E-mail:</div>
+                      <div class="col-7 personal-data-value">warlock.gpl@gmail.com</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-5 personal-data-key">Github:</div>
+                      <div class="col-7 personal-data-value">github.com/w4rlock</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div id="background" class="card profile-background"
+            style="border: 1px solid #E9E9E9; padding-bottom:10px">
+            <span class="card-title">Overview</span>
+            <div class="background-content ">
+              <div id="background-experience-container" class="background-section">
+                <p>
+                  Since last years i am developing new architectures and solutions for aws. 
+                  I am 10+ years experience as fullstack developer and 15+ years using Linux, 
+                  i worked with a lot of languages programming and frameworks.
+                </p>
+              </div>
+            </div>
+          </div> -->
+
+          <div id="background" class="card profile-background"
+            style="border: 1px solid #E9E9E9; padding-bottom:10px">
+            <span class="card-title">Experience</span>
+            <div class="background-content ">
+              <div id="background-experience-container" class="background-section"
+                data-li-template="experience_section">
+                <div id="background-experience" class="background-experience edit-default">
+                  <!-- <h3>Experience</h3> -->
+                  <div id="experience-693302944123" class="experiencie-section section-item current-position">
+                    <div class="timeline-circle-year-container">
+                      <div class="timeline-year">2020</div>
+                      <div class="timeline-circle-out">
+                        <div class="timeline-circle-in"></div>
+                      </div>
+                    </div>
+                    <div id="experience-693302944-view">
+                      <header>
+                        <h4><a class="role-title">Architect CloudOps</a></h4>
+                        <h5><span data-tracking="mcp_profile_sum" class="new-miniprofile-container"
+                         ><strong><a class="role-place">Naranja - 2020 - Present</a></strong></span></h5>
+                      </header>
+                      <p class="description summary-field-show-more">
+                        <ul>
+                            <li>Develop application features and improvements (fullstack)</li>
+                            <li>Develop new infrastructures as code using serverless framework </li>
+                            <li>Document processes and infrastructure</li>
+                            <li>Automate eks clusters upgrades</li>
+                            <li>Maintain CI/CD Gitlab pipelines</li>
+                            <li>Aws Cost Optimization</li>
+                            <li>Install k3s clusters on on-premises machines</li>
+                            <li>Cloud troubleshooting</li>
+                            <li>Interviewer</li>
+                            <li>Give teams support</li>
+                            <li>Promote good practices</li>
+                            <li>Scrum methodology</li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </div>
+                  <div id="experience-69330294422" class="experiencie-section section-item current-position">
+                    <div class="timeline-circle-year-container">
+                      <div class="timeline-year">2017</div>
+                      <div class="timeline-circle-out">
+                        <div class="timeline-circle-in"></div>
+                      </div>
+                    </div>
+                    <div id="experience-693302944-view">
+                      <header>
+                        <h4><a class="role-title">Sr. Software Engineer</a></h4>
+                        <h5><span data-tracking="mcp_profile_sum" class="new-miniprofile-container"><strong>
+                              <a class="role-place">McAfee - 2017 - 2020</a></strong></span></h5>
+                      </header>
+                      <p class="description summary-field-show-more" dir="ltr">
+                        <ul>
+                          <li>Developed java microservices features using springboot and hibernate</li>
+                          <li>Migrated microservices from on-premises to cloud</li>
+                          <li>Implemented scripts for hot-deploy and rollback actions</li>
+                          <li>Improved and automated development process</li>
+                          <li>Added kubernetes Security</li>
+                          <li>Cloud troubleshooting</li>
+                          <li>Maintained docker images</li>
+                          <li>Maintained CI/CD teamcity pipelines</li>
+                          <li>Maintained a lot of linux servers</li>
+                          <li>Maintained kubernetes resources</li>
+                          <li>Automated environments with ansible</li>
+                          <li>Gave teams support</li>
+                          <li>Scrum methodology</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div id="experience-69331294122" class="experiencie-section section-item current-position">
+                    <div class="timeline-circle-year-container">
+                      <div class="timeline-year">2016</div>
+                      <div class="timeline-circle-out">
+                        <div class="timeline-circle-in"></div>
+                      </div>
+                    </div>
+                    <div id="experience-693302944-view">
+                      <header>
+                        <h4><a class="role-title">Front End Developer</a></h4>
+                        <h5><span data-tracking="mcp_profile_sum"
+                            class="new-miniprofile-container /biz/miniprofile/3768727?pathWildcard=3768727"><strong><a
+                            class="role-place">Intel - 2016 - 2017</a></strong></span></h5>
+                      </header>
+                      <p class="description summary-field-show-more" dir="ltr">
+                        <ul>
+                          <li>Developed application features using angular js with redux. </li>
+                          <li>QA automated using python and selenium webdriver</li>
+                          <li>Migrated angular project to new version</li>
+                          <li>Improved functional programming</li>
+                          <li>Gave teams support</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+
+
+                  <div id="experience-693302944" class="experiencie-section section-item current-position">
+                    <div class="timeline-circle-year-container">
+                      <div class="timeline-year">2015</div>
+                      <div class="timeline-circle-out">
+                        <div class="timeline-circle-in"></div>
+                      </div>
+                    </div>
+                    <div id="experience-693302944-view">
+                      <header>
+                        <h4><a class="role-title">Full Stack Developer</a></h4>
+                        <h5><span data-tracking="mcp_profile_sum"
+                            class="new-miniprofile-container"><strong>
+                              <a class="role-place">RockBox Studios - 2015 - 2016</a></strong></span></h5>
+                      </header>
+                      <p class="description summary-field-show-more" dir="ltr">
+                        <ul>
+                          <li>Developed apps with node js, vue js and angular js</li>
+                          <li>Developed php wordpress sites</li>
+                          <li>Developed android features</li>
+                          <li>Migrated python project to node js</li>
+                          <li>Maintained and managed linux servers</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div id="experience-568043083" class="experiencie-section section-item past-position">
+                    <div class="timeline-circle-year-container">
+                      <div class="timeline-year">2010</div>
+                      <div class="timeline-circle-out">
+                        <div class="timeline-circle-in"></div>
+                      </div>
+                    </div>
+                    <div id="experience-568043083-view">
+                      <header>
+                        <h4><a class="role-title">Full Stack Developer</a></h4>
+                        <h5><span data-tracking="mcp_profile_sum"
+                            class="new-miniprofile-container"><strong><a
+                            class="role-place">Unitech - 2010 - 2015</a></strong></span></h5>
+                      </header>
+                      <p class="description summary-field-show-more" dir="ltr">
+                        <ul>
+                          <li>Developed java services using springframework, jsf, jsp, jpa</li>
+                          <li class="break-page-1">Databases engines: oracle, mssql, postgres</li>
+                          <li>Cron Jobs</li>
+                          <li>Digital Signature</li>
+                          <li>Developed frontend modules in adobe flex</li>
+                          <li>Developed desktop applications in visual basic</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="background-skills-container" class="background-section" data-li-template="skills_section"></div>
+              <div id="background-additional-info-container" class="background-section"
+                data-li-template="additional_info_section"></div>
+            </div>
+          </div>
+
+
+
+          <div id="background" class="card profile-background" style="border: 1px solid #E9E9E9;">
+            <div class="background-content ">
+              <span class="card-title">Awards</span>
+       
+              <div id="background-honors-container" class="background-section" data-li-template="honors_section">
+                <div id="background-honors" class="background-honors " style="border-bottom:0px">
+                  <h3 class="icon-section-title">Awards</h3>
+                  <div id="honors-430" class="editable-item section-item awards-container ">
+                    <div id="honors-430-view" class="awards-items">
+                        <h4 class="summary fn org"><span dir="auto" class="award-item-title">Hackathon - First Place</span></h4>
+                        <h5><span dir="auto" class="award-item-place">San Luis Digital - 2013</span></h5>
+                        <p class="description summary-field-show-more" dir="ltr" id="control_gen_9">
+                          I developed a web application called "My next bus" where you can see all city bus routes in real 
+                          time and nearby stops. 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="background" class="card profile-background" style="border: 1px solid #E9E9E9;">
+            <span class="card-title">Skills</span>
+            <div class="background-content ">
+              <div id="background-experience-container" class="background-section"
+                data-li-template="experience_section"></div>
+              <div id="background-skills-container" class="background-section">
+                <div id="background-skills" class="background-skills edit-default" style="border-bottom:0">
+                  <div class="hd">
+                    <h3 class="icon-section-title">SKILLS</h3>
+                  </div>
+                  <div id="skills-item" class="editable-item">
+                    <div id="skills-item-view">
+                      <div id="profile-skills" class="profile-skill-section">
+                        <h5>DevOps</h5>
+                        <ul class="skills-section compact-view">
+                          <li>Automation</li>
+                          <li>Linux Expert</li>
+                          <li>Unix</li>
+                          <li>Bash Scripting</li>
+                          <li>Net tools</li>
+                          <li>SSH</li>
+                          <li>Docker</li>
+                          <li>Docker Compose</li>
+                          <li>Docker Machine</li>
+                          <li>Aws cli</li>
+                          <li>kubectl</li>
+                          <li>Terraform</li>
+                          <li>Ansible</li>
+                          <li>Serverless Framework</li>
+                          <li>Aws Cloud Formation</li>
+                          <li>Calico K8S Firewall</li>
+                          <li>Minikube</li>
+                          <li>Kubernetes</li>
+                          <li>Kong</li>
+                          <li>K3s</li>
+                          <li>Etcd</li>
+                          <li>Helm</li>
+                          <li>Vault</li>
+                          <li>Git</li>
+                          <li>CI / CD</li>
+                          <li>Gitlab</li>
+                          <li>TeamCity</li>
+                          <li>Aws X-Ray</li>
+                          <li>Aws CloudWatch</li>
+                          <li>Hygieia</li>
+                        </ul>
+                      </div>
+
+                      <div id="profile-skills" class="profile-skill-section">
+                        <h5>Backend</h5>
+                        <ul class="skills-section compact-view">
+                          <li>Node JS</li>
+                          <li>ES6</li>
+                          <li>Express JS</li>
+                          <li>Koa JS</li>
+                          <li>Sequelize JS</li>
+                          <li>Socket.IO</li>
+                          <li>Passport JS</li>
+                          <li>JWT</li>
+                          <li>Aws Lambda</li>
+                          <li>Aws Route 53</li>
+                          <li>Aws Api Gateway</li>
+                          <li>Nginx</li>
+                          <li>Python</li>
+                          <li>Wiremock</li>
+                          <li>Mockito</li>
+                          <li>Java</li>
+                          <li>Apache Kafka</li>
+                          <li>Springboot</li>
+                          <li>Hibernate</li>
+                          <li>Aws S3</li>
+                          <li>MySQL</li>
+                          <li>Oracle</li>
+                          <li>MSSQL</li>
+                          <li>MongoDB</li>
+                          <li>Redis</li>
+                          <li>PHP</li>
+                        </ul>
+                      </div>
+
+
+                      <div id="profile-skills" class="profile-skill-section">
+                        <h5>Frontend</h5>
+                        <ul class="skills-section compact-view">
+                          <li>Angular JS</li>
+                          <li>Vue JS</li>
+                          <li>Lodash JS</li>
+                          <li>Ramda JS</li>
+                          <li>AWS CDN</li>
+                          <li>Webpack</li>
+                          <li>Karma JS</li>
+                          <li>Istanbul JS</li>
+                          <li>Html5</li>
+                          <li>Material</li>
+                          <li>Bootstrap</li>
+                          <li>CSS3</li>
+                          <li>Sass</li>
+                          <li>Npm</li>
+                          <li>Husky</li>
+                          <li>ESLint</li>
+                          <li>Prettier</li>
+                          <li>CommitLint</li>
+                          <li>Test Automation</li>
+                          <li>Selenium Webdriver</li>
+                          <li>Google Maps</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="height: 70px;"></div>
+
+          <div id="background" class="card profile-background" style="border: 1px solid #E9E9E9;">
+            <div class="background-content ">
+              <span class="card-title">EDUCATION</span>
+              <div id="background-courses-container" class="background-section" data-li-template="courses_section">
+                <div id="background-education-container" class="background-section" data-li-template="education_section">
+                  <div id="background-education" class="background-education edit-default">
+                    <h3 class="icon-section-title">Education</h3>
+                    <div id="education-211113042" class="editable-item section-item education-container">
+                      <div id="education-211113042-view">
+                        <div class="education education-item first">
+                          <header>
+                            <h4 class="summary fn org" dir="auto">
+                              <a class="education-item-title">Aws Cloud Computing Diploma</a>
+                            </h4>
+                            <div><span class="degree education-item-place">UCC - Cordoba Catholic University</span></div>
+                            <span class="education-item-time"><time>2019 - 2019</time></span>
+                          </header><span class="education-date"></span>
+                        </div>
+                        <div class="education education-item margin-top-30">
+                          <header>
+                            <h4 class="summary fn org" dir="auto">
+                              <a class="education-item-title">Technical Software Developer</a>
+                            </h4>
+                            <div><span class="degree education-item-place">ULP - La Punta University</span></div>
+                            <span class="education-item-time"><time>2008 - 2011</time></span>
+                          </header><span class="education-date"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="background-courses" class="background-courses" style="margin-bottom: 50px; border-bottom:0px">
+                  <h3 class="icon-section-title">Courses</h3>
+                  <div id="courses" class="editable-item">
+                    <div id="courses-view">
+                      <div class="section-item">
+                        <ul class="courses-listing">
+                          <li>2020 - Aws - Developing on Aws</li>
+                          <li>2013 - Java 310 </li>
+                          <li>2012 - Java 275 </li>
+                          <li>2010 - PHP and MySQL </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
